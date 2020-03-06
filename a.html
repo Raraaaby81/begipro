@@ -43,8 +43,22 @@
             <ol>
               <li><a href="#description">説明</a></li>
               <li><a href="#place">使用場所</a></li>
-              <li><a href="#aspect">属性</a></li>
-              <li><a href="#tips">発展知識</a></li>
+              <li>
+                <a href="#aspect">属性</a>
+                <ol>
+                  <li><a href="#aspect-href">href</a></li>
+                  <li><a href="#aspect-target">target</a></li>
+                  <li><a href="#aspect-download">download</a></li>
+                  <li><a href="#aspect-hreflang">hreflang</a></li>
+                  <li><a href="#aspect-ping">ping</a></li>
+                </ol>
+              </li>
+              <li>
+                <a href="#tips">発展知識</a>
+                <ol>
+                  <li><a href="#tips-1">ページの途中の特定の場所を表示する</a></li>
+                </ol>
+              </li>
               <li><a href="#example">使用例</a></li>
             </ol>
           </div>
@@ -85,7 +99,7 @@
           <div class="body-desc">
             <div class="aspect-block">
               <!-- Title -->
-              <div class="aspect-t">
+              <div class="aspect-t" id="aspect-href">
                 href
               </div>
               <div class="aspect-in">
@@ -97,7 +111,7 @@
               </div>
               <!-- ここまでで1ブロック -->
               <!-- Title -->
-              <div class="aspect-t">
+              <div class="aspect-t" id="aspect-target">
                 target
               </div>
               <div class="aspect-in">
@@ -121,7 +135,7 @@
               </div>
               <!-- ここまでで1ブロック -->
               <!-- Title -->
-              <div class="aspect-t">
+              <div class="aspect-t" id="aspect-download">
                 download
               </div>
               <div class="aspect-in">
@@ -132,7 +146,7 @@
               </div>
               <!-- ここまでで1ブロック -->
               <!-- Title -->
-              <div class="aspect-t">
+              <div class="aspect-t" id="aspect-hreflang">
                 hreflang
               </div>
               <div class="aspect-in">
@@ -143,7 +157,7 @@
               </div>
               <!-- ここまでで1ブロック -->
               <!-- Title -->
-              <div class="aspect-t">
+              <div class="aspect-t" id="aspect-ping">
                 ping
               </div>
               <div class="aspect-in">
@@ -166,8 +180,8 @@
             </div>
           </div>
           <div class="body-desc">
-            <div class="tips-t">
-              ページの途中の特定の場所を表示する
+            <div class="tips-t" id="tips-1">
+              ページ途中の特定の場所を表示する
             </div>
             <div class="tips-in">
               <div class="tips-d">
@@ -201,10 +215,10 @@
                     </div>
                     <div class="tips-c-h-e">
                       使用する要素 : <mark>a</mark><br>
-                      使用する属性 : <a href="#">href</a><br>
+                      使用する属性 : <a href="#aspect-href">href</a><br>
                     </div>
                     <ol>
-                      <li><<mark>a</mark>&nbsp;<a href="#">href</a>="#table"> ... <<mark>/a</mark>></li>
+                      <li><<mark>a</mark>&nbsp;<a href="#aspect-href">href</a>="#table"> ... <<mark>/a</mark>></li>
                     </ol>
                   </div>
                   このページのなかでtableというidは目次につけられているので、次のリンクをクリックすると目次にジャンプすることができます。<br>
@@ -218,10 +232,10 @@
                 </div>
                 <div class="tips-c-h-e">
                   使用する要素 : <mark>a</mark><br>
-                  使用する属性 : <a href="#">href</a><br>
+                  使用する属性 : <a href="#aspect-href">href</a><br>
                 </div>
                 <ol>
-                  <li><<mark>a</mark>&nbsp;<a href="#">href</a>="飛びたいリンク#example"> ... <<mark>/a</mark>></li>
+                  <li><<mark>a</mark>&nbsp;<a href="#aspect-href">href</a>="飛びたいリンク#example"> ... <<mark>/a</mark>></li>
                 </ol>
               </div>
               exampleのところを何も書かずに#のみにすると、ページのトップにジャンプすることができます。<br>
@@ -233,10 +247,10 @@
                 </div>
                 <div class="tips-c-h-e">
                   使用する要素 : <mark>a</mark><br>
-                  使用する属性 : <a href="#">href</a><br>
+                  使用する属性 : <a href="#aspect-href">href</a><br>
                 </div>
                 <ol>
-                  <li><<mark>a</mark>&nbsp;<a href="#">href</a>="#"> ... <<mark>/a</mark>></li>
+                  <li><<mark>a</mark>&nbsp;<a href="#aspect-href">href</a>="#"> ... <<mark>/a</mark>></li>
                 </ol>
               </div>
               <a href="#">ここをクリックするとページトップに飛びます！</a>
@@ -264,11 +278,11 @@
               </div>
               <div class="exa-c-h-e">
                 使用する要素 : <mark>a</mark><br>
-                使用する属性 : <a href="#">href</a>&nbsp;&nbsp;<a href="#">target</a><br>
+                使用する属性 : <a href="#aspect-href">href</a>&nbsp;&nbsp;<a href="#aspect-target">target</a><br>
               </div>
               <ol>
-                <li><<mark>a</mark> <a href="#">href</a>="https://www.google.com/?hl=ja">Google<<mark>/a</mark>></li>
-                <li><<mark>a</mark> <a href="#">href</a>="#" <a href="#">target</a>="_blank">ページトップ<<mark>/a</mark>></li>
+                <li><<mark>a</mark> <a href="#aspect-href">href</a>="https://www.google.com/?hl=ja">Google<<mark>/a</mark>></li>
+                <li><<mark>a</mark> <a href="#aspect-href">href</a>="#" <a href="#aspect-target">target</a>="_blank">ページトップ<<mark>/a</mark>></li>
               </ol>
             </div>
             <!-- Result -->
