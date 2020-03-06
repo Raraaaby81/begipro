@@ -34,8 +34,23 @@
         <div class="body-maintitle">
           < >div<<code>/</code>>
         </div>
+        <!-- 目次 -->
+        <div class="table" id="table">
+          <div class="table-title">
+            目次
+          </div>
+          <div class="table-in">
+            <ol>
+              <li><a href="#description">説明</a></li>
+              <li><a href="#place">使用場所</a></li>
+              <li><a href="#aspect">属性</a></li>
+              <li><a href="#example">使用例</a></li>
+            </ol>
+          </div>
+        </div>
+
         <!-- 説明 -->
-        <div class="body-subtitle">
+        <div class="body-subtitle" id="description">
           <div class="body-subtitle-in">
             ブロック化する
           </div>
@@ -49,8 +64,8 @@
         </div>
         <!-- ここまでで１ブロック -->
 
-        <div class="body-place">
-          <!-- 使用場所 -->
+        <!-- 使用場所 -->
+        <div class="body-place" id="place">
           <div class="body-subtitle">
             <div class="body-subtitle-in">
               使用場所
@@ -61,8 +76,8 @@
           </div>
         </div>
 
-        <div class="body-aspect">
-          <!-- 属性 -->
+        <!-- 属性 -->
+        <div class="body-aspect" id="aspect">
           <div class="body-subtitle">
             <div class="body-subtitle-in">
               属性
@@ -74,19 +89,21 @@
               <div class="aspect-t">
                 align
               </div>
-              <!-- description -->
-              <div class="aspect-d">
-                要素内容の左右配置を決める<br>
-                <<code>div</code> align="値"><br>
-              </div>
-              <!-- Value -->
-              <div class="aspect-v">
-                値 : center,left,right,justify<br>
-                <div class="aspect-v-d">
-                  left : 左寄せで表示<br>
-                  center : 中寄せで表示<br>
-                  right : 右寄せで表示<br>
-                  justif : 均等に表示<br>
+              <div class="aspect-in">
+                <!-- description -->
+                <div class="aspect-d">
+                  要素内容の左右配置を決める<br>
+                  <<code>div</code> align="値"><br>
+                </div>
+                <!-- Value -->
+                <div class="aspect-v">
+                  値 : center, left, right, justify<br>
+                  <div class="aspect-v-d">
+                    left : 左寄せで表示<br>
+                    center : 中寄せで表示<br>
+                    right : 右寄せで表示<br>
+                    justif : 均等に表示<br>
+                  </div>
                 </div>
               </div>
             </div>
@@ -94,7 +111,7 @@
         </div>
 
         <!-- 使用例 -->
-        <div class="body-exa">
+        <div class="body-exa" id="example">
           <div class="body-subtitle">
             <div class="body-subtitle-in">
               使用例
@@ -112,7 +129,8 @@
                 <u>htmlファイル</u>
               </div>
               <div class="exa-c-h-e">
-                使用する要素 : <mark>div</mark>&nbsp;&nbsp;<a href="#">h1</a>&nbsp;&nbsp;<a href="#">h2</a>
+                使用する要素 : <mark>div</mark>&nbsp;&nbsp;<a href="#">h1</a>&nbsp;&nbsp;<a href="#">h2</a><br>
+                使用する属性 : <a href="#">align</a><br>
               </div>
               <ol>
                 <li><<mark>div</mark>></li>
@@ -120,7 +138,7 @@
                 <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<a href="#">h2</a>>English<<a href="#">/h2</a>></li>
                 <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<a href="#">h1</a>>Hello!<<a href="#">/h1</a>></li>
                 <li><span class="cline">&nbsp;</span><<mark>/div</mark>></li>
-                <li><span class="cline">&nbsp;</span><<mark>div</mark>&nbsp;align="center"></li>
+                <li><span class="cline">&nbsp;</span><<mark>div</mark>&nbsp;<a href="#">align</a>="center"></li>
                 <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<a href="#">h2</a>>日本語<<a href="#">h2</a>></li>
                 <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<a href="#">h1</a>>こんにちは!<<a href="#">h1</a>></li>
                 <li><span class="cline">&nbsp;</span><<mark>/div</mark>></li>
