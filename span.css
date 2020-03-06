@@ -37,7 +37,8 @@ header{
   font-family: sans-serif;
   font-size: 3vw;
   padding-top: 1vw;
-  padding-bottom: 0.5vw;
+  margin-bottom: 1vw;
+  border-bottom: thin solid black;
 }
 .table{
   margin-left: 15vw;
@@ -76,6 +77,10 @@ header{
   padding: 0.5vw 1vw;
   border-right: thin solid orange;
   border-left: thin solid orange;
+}
+.body-desc-t{
+  font-size: 2vw;
+  padding-bottom: 1vw;
 }
 .aspect-t{
   font-size: 2vw;
@@ -130,7 +135,11 @@ header{
   padding: 0.3vw;
   background-color: #8000803b;
 }
-.tips-c-h code{
+.tips-r{
+  padding-left: 1vw;
+  border: thin solid gray;
+}
+.tips-c-h code,.exa-block code,.aspect-block code{
   font-family: sans-serif;
 }
 .tips-c-h ol{
@@ -141,9 +150,6 @@ header{
   margin: 0.5vw 4vw;
   padding: 0.5vw 2vw;
   border: thin solid yellow;
-}
-.exa-block code{
-  font-family: sans-serif;
 }
 .exa-t{
   font-family: Tahoma;
