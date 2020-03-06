@@ -39,6 +39,24 @@ header{
   padding-top: 1vw;
   padding-bottom: 0.5vw;
 }
+.table{
+  margin-left: 15vw;
+  margin-right: 15vw;
+  padding: 1vw 2vw;
+  background-color: #80808042;
+  border: thin solid black;
+}
+.table-title{
+  color: gray;
+  font-size: 2vw;
+}
+.table-in{
+  font-size: 1.5vw;
+  padding-left: 1.5vw;
+}
+.table-in > ol{
+  line-height: 1.5em;
+}
 .body-subtitle{
   font-family: sans-serif;
   margin-top: 1vw;
@@ -62,6 +80,11 @@ header{
 .aspect-t{
   font-size: 2vw;
 }
+.aspect-in{
+  margin-bottom: 1vw;
+  padding-left: 1vw;
+  border-left: medium solid orange;
+}
 .aspect-d{
   padding-left: 1vw;
 }
@@ -72,7 +95,47 @@ header{
 .aspect-v-d{
   margin-left: 1.5vw;
   padding-left: 1vw;
+  border-left: thick solid orange;
+}
+.tips-t{
+  font-size: 2vw;
+}
+.tips-in{
+  margin-bottom: 1vw;
+  padding-left: 1vw;
   border-left: medium solid orange;
+}
+.tips-d{
+  font-size: 1.5vw;
+}
+.tips-c-h{
+  font-size: 1vw;
+  padding: 0.3vw;
+  background-color: #7fd3de80;
+}
+.tips-c-h-t,.tips-c-c-t{
+  font-size: 1.5vw;
+  padding-top: 0.5vw;
+  padding-left: 1vw;
+}
+.tips-c-h-e,.tips-c-c-e{
+  padding-top: 0.5vw;
+  padding-left: 1vw;
+}
+.tips-c-h li,.tips-c-c li{
+  border-left: thin solid black;
+}
+.tips-c-c{
+  font-size: 1vw;
+  padding: 0.3vw;
+  background-color: #8000803b;
+}
+.tips-c-h code{
+  font-family: sans-serif;
+}
+.tips-c-h ol{
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }
 .exa-block{
   margin: 0.5vw 4vw;
@@ -124,7 +187,7 @@ footer{
 /* ここまで全ページ共通 */
 
 
-/* Exa内部専用 */
+/* Tips,Exa内部専用 */
 .exa-r-span{
   color: red;
 }
