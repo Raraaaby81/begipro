@@ -51,8 +51,24 @@
                 </ol>
               </li>
               <li><a href="#place">使用場所</a></li>
-              <li><a href="#aspect">属性</a></li>
-              <li><a href="#tips">発展知識</a></li>
+              <li>
+                <a href="#aspect">属性</a>
+                <ol>
+                  <li><a href="#aspect-reversed">reversed</a></li>
+                  <li><a href="#aspect-start">start</a></li>
+                  <li><a href="#aspect-value">value</a></li>
+                  <li><a href="#aspect-type">type</a></li>
+                </ol>
+              </li>
+              <li>
+                <a href="#tips">発展知識</a>
+                <ol>
+                  <li><a href="#tips-1">ol要素の数字を大きい順にする</a></li>
+                  <li><a href="#tips-2">リスト先頭の点や数字をなくす</a></li>
+                  <li><a href="#tips-3">ol要素の数字を途中から始める</a></li>
+                  <li><a href="#tips-4">リスト先頭の数字を指定する</a></li>
+                </ol>
+              </li>
               <li><a href="#example">使用例</a></li>
             </ol>
           </div>
@@ -155,7 +171,7 @@
           <div class="body-desc">
             <div class="aspect-block">
               <!-- Title -->
-              <div class="aspect-t">
+              <div class="aspect-t" id="aspect-reversed">
                 reversed
               </div>
               <div class="aspect-in">
@@ -163,12 +179,12 @@
                 <div class="aspect-d">
                   ol要素を使ったリストの数字を大きい順にします。<br>
                   <<code>ol</code> reversed> ... <<code>/ol</code>><br>
-                  詳しくは発展知識で説明します。<a href="#special-1">ここをクリック！</a><br>
+                  詳しくは発展知識で説明します。<a href="#tips-1">ここをクリック！</a><br>
                 </div>
               </div>
               <!-- ここまでで1ブロック -->
               <!-- Title -->
-              <div class="aspect-t">
+              <div class="aspect-t" id="aspect-start">
                 start
               </div>
               <div class="aspect-in">
@@ -176,12 +192,12 @@
                 <div class="aspect-d">
                   ol要素を使ったリストの数字を指定した数字から始めます。<br>
                   <<code>ol</code> start="始める数字"> ... <<code>/ol</code>><br>
-                  詳しくは発展知識で説明します。<a href="#special-2">ここをクリック！</a><br>
+                  詳しくは発展知識で説明します。<a href="#tips-3">ここをクリック！</a><br>
                 </div>
               </div>
               <!-- ここまでで1ブロック -->
               <!-- Title -->
-              <div class="aspect-t">
+              <div class="aspect-t" id="aspect-value">
                 value
               </div>
               <div class="aspect-in">
@@ -190,12 +206,12 @@
                   ol要素を使ったリストの数字を指定します。<br>
                   指定場所は変更したい項目のli要素の中です。<br>
                   <<code>li</code> value="数字"> ... <<code>/li</code>><br>
-                  詳しくは発展知識で説明します。<a href="#special-3">ここをクリック！</a><br>
+                  詳しくは発展知識で説明します。<a href="#tips-4">ここをクリック！</a><br>
                 </div>
               </div>
               <!-- ここまでで1ブロック -->
               <!-- Title -->
-              <div class="aspect-t">
+              <div class="aspect-t" id="aspect-type">
                 type
               </div>
               <div class="aspect-in">
@@ -270,7 +286,7 @@
             </div>
           </div>
           <div class="body-desc">
-            <div class="tips-t" id="special-1">
+            <div class="tips-t" id="tips-1">
               ol要素の数字を大きい順にする
             </div>
             <div class="tips-in">
@@ -283,10 +299,10 @@
                 </div>
                 <div class="tips-c-h-e">
                   使用する要素 : <mark>ol</mark>&nbsp;&nbsp;<mark>li</mark><br>
-                  使用する属性 : <a href="#">reversed</a><br>
+                  使用する属性 : <a href="#aspect-reversed">reversed</a><br>
                 </div>
                 <ol>
-                  <li><<mark>ol</mark>&nbsp;<a href="#">reversed</a>></li>
+                  <li><<mark>ol</mark>&nbsp;<a href="#aspect-reversed">reversed</a>></li>
                   <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>a<<mark>/li</mark>></li>
                   <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>i<<mark>/li</mark>></li>
                   <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>u<<mark>/li</mark>></li>
@@ -301,7 +317,7 @@
                 </ol>
               </div>
             </div>
-            <div class="tips-t">
+            <div class="tips-t" id="tips-2">
               リスト先頭の点や数字をなくす
             </div>
             <div class="tips-in">
@@ -344,7 +360,7 @@
                 </ul>
               </div>
             </div>
-            <div class="tips-t" id="special-2">
+            <div class="tips-t" id="tips-3">
               ol要素の数字を途中から始める
             </div>
             <div class="tips-in">
@@ -357,10 +373,10 @@
                 </div>
                 <div class="tips-c-h-e">
                   使用する要素 : <mark>ol</mark>&nbsp;&nbsp;<mark>li</mark><br>
-                  使用する属性 : <a href="#">start</a>
+                  使用する属性 : <a href="#aspect-start">start</a>
                 </div>
                 <ol>
-                  <li><<mark>ol</mark> start="5"></li>
+                  <li><<mark>ol</mark> <a href="#aspect-start">start</a>="5"></li>
                   <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>a<<mark>/li</mark>></li>
                   <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>i<<mark>/li</mark>></li>
                   <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>u<<mark>/li</mark>></li>
@@ -375,7 +391,7 @@
                 </ol>
               </div>
             </div>
-            <div class="tips-t" id="special-3">
+            <div class="tips-t" id="tips-4">
               リスト先頭の数字を指定する
             </div>
             <div class="tips-in">
@@ -389,13 +405,13 @@
                 </div>
                 <div class="tips-c-h-e">
                   使用する要素 : <mark>ol</mark>&nbsp;&nbsp;<mark>li</mark><br>
-                  使用する属性 : <a href="#">value</a>
+                  使用する属性 : <a href="#aspect-value">value</a>
                 </div>
                 <ol>
                   <li><<mark>ol</mark>></li>
                   <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>a<<mark>/li</mark>></li>
                   <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>i<<mark>/li</mark>></li>
-                  <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark> value="10">u<<mark>/li</mark>></li>
+                  <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark> <a href="#aspect-value">value</a>="10">u<<mark>/li</mark>></li>
                   <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>e<<mark>/li</mark>></li>
                   <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>o<<mark>/li</mark>></li>
                   <li><<mark>/ol</mark>></li>
@@ -478,14 +494,14 @@
               </div>
               <div class="exa-c-h-e">
                 使用する要素 : <mark>ol</mark>&nbsp;&nbsp;<a href="#"><mark>li</mark></a><br>
-                使用する属性 : reversed&nbsp;&nbsp;value
+                使用する属性 : <a href="#aspect-reversed">reversed</a>&nbsp;&nbsp;<a href="#aspect-value">value</a>
               </div>
               <ol>
-                <li><<mark>ol</mark>&nbsp;reversed></li>
+                <li><<mark>ol</mark>&nbsp;<a href="#aspect-reversed">reversed</a>></li>
                 <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>a<mark>/li</mark>></li>
                 <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>i<<mark>/li</mark>></li>
                 <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>u<<mark>/li</mark>></li>
-                <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>&nbsp;value="4">e<<mark>/li</mark>></li>
+                <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>&nbsp;<a href="#aspect-value">value</a>="4">e<<mark>/li</mark>></li>
                 <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>o<<mark>/li</mark>></li>
                 <li><<mark>/ol</mark>></li>
               </ol>
