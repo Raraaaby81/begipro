@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="ul-ol-menu-li.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-logo">
+        Logo
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- List -->
+      <div class="list-menu">
+        <div class="list-menu1">
+          <a href="#" class="list-button">1</a>
+        </div>
+        <div class="list-menu2">
+          <a href="#" class="list-button">2</a>
+        </div>
+        <div class="list-menu3">
+          <a href="#" class="list-button">3</a>
+        </div>
+      </div>
+
+      <!-- Main-main -->
+      <div class="body">
+        <!-- ページタイトル -->
+        <div class="body-maintitle">
+          < >ul<<code>/</code>> < >ol<<code>/</code>> < >menu<<code>/</code>> < >li<<code>/</code>>
+        </div>
+        <!-- 目次 -->
+        <div class="table" id="table">
+          <div class="table-title">
+            目次
+          </div>
+          <div class="table-in">
+            <ol>
+              <li>
+                <a href="#description">説明</a>
+                <ol>
+                  <li><a href="#description-ul">< >ul<<code>/</code>></a></li>
+                  <li><a href="#description-ol">< >ol<<code>/</code>></a></li>
+                  <li><a href="#description-menu">< >menu<<code>/</code>></a></li>
+                  <li><a href="#description-li">< >li<<code>/</code>></a></li>
+                </ol>
+              </li>
+              <li><a href="#place">使用場所</a></li>
+              <li><a href="#aspect">属性</a></li>
+              <li><a href="#tips">発展知識</a></li>
+              <li><a href="#example">使用例</a></li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- 説明 -->
+        <div class="body-subtitle" id="description">
+          <div class="body-subtitle-in">
+            リスト化する
+          </div>
+        </div>
+        <div class="body-desc">
+          ここで紹介する要素はいくつかの項目をリスト化することができます。<br>
+          わざわざ1つずつ<a href="#">div要素</a>や<a href="#">p要素</a>を作らなくていいんです！<br>
+        </div>
+        <div class="body-desc" id="description-ul">
+          <div class="body-desc-t">
+            < >ul<<code>/</code>>
+          </div>
+          ulをつかうことでいくつかの項目をリスト化することができます。<br>
+          しかし、このul要素だけでは機能しないので、<a href="#description-li">li要素</a>とセットで使用します。<br>
+          リスト化すると、項目の先頭に点がつきます。<br>
+          この点は非表示にしたり、違うものにすることができます。<br>
+          詳しくはこのページのさらに下の<a href="#tips">発展知識</a>で説明します。<br>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>ダー。。。ぁー。。</li>
+          </ul>
+        </div>
+        <!-- ここまでで１ブロック -->
+        <div class="body-desc" id="description-ol">
+          <div class="body-desc-t">
+            < >ol<<code>/</code>>
+          </div>
+          olをつかうことでul同様、いくつかの項目をリスト化することができます。<br>
+          このol要素も単独では機能しないので、<a href="#description-li">li要素</a>とセットで使用します。<br>
+          リスト化すると、項目の先頭に数字など順番を表す文字が表示されます。<br>
+          このページの目次はol要素と<a href="#description-li">li要素</a>で構成されています。<br>
+          この数字は非表示にすることができます。<br>
+          詳しくはこのページのさらに下の<a href="#tips">発展知識</a>で説明します。<br>
+          <ol>
+            <li>one</li>
+            <li>plus</li>
+            <li>three</li>
+            <li>equals</li>
+            <li>ten.</li>
+          </ol>
+        </div>
+        <!-- ここまでで１ブロック -->
+        <div class="body-desc" id="description-menu">
+          <div class="body-desc-t">
+            < >menu<<code>/</code>>
+          </div>
+          menuをつかうことでul, ol同様、いくつかの項目をリスト化することができます。<br>
+          このmenu要素も単独では機能しないので、<a href="#description-li">li要素</a>とセットで使用します。<br>
+          リスト化すると、点とツールバーとして表示されます。<br>
+          scriptなどと組み合わせるときによく使われます。<br>
+          しかしながら、これがしようできないブラウザも多いです。あーあ。<br>
+          下の例では<a href="#">button要素</a>と併せて使用しています。(押してもとくになにもないです。)<br>
+          <menu>
+            <li><button type="button" name="button">よお</button></li>
+            <li><button type="button" name="button">ヨオ</button></li>
+            <li><button type="button" name="button">yoooooo</button></li>
+          </menu>
+        </div>
+        <!-- ここまでで１ブロック -->
+        <div class="body-desc" id="description-li">
+          <div class="body-desc-t">
+            < >li<<code>/</code>>
+          </div>
+          liは上で説明した3つの中で項目ごとに使用します。<br>
+          ここまで説明した4つをつかうことで階層構造を成すリストもできます。<br>
+        </div>
+        <!-- ここまでで１ブロック -->
+
+        <!-- 使用場所 -->
+        <div class="body-place" id="place">
+          <div class="body-subtitle">
+            <div class="body-subtitle-in">
+              使用場所
+            </div>
+          </div>
+          <div class="body-desc">
+            ul要素 : body内部<br>
+            ol要素 : body内部<br>
+            menu要素 : body内部<br>
+            li要素 : ul要素、ol要素、menu要素いずれかの内部<br>
+          </div>
+        </div>
+
+        <!-- 属性 -->
+        <div class="body-aspect" id="aspect">
+          <div class="body-subtitle">
+            <div class="body-subtitle-in">
+              属性
+            </div>
+          </div>
+          <div class="body-desc">
+            <div class="aspect-block">
+              <!-- Title -->
+              <div class="aspect-t">
+                reversed
+              </div>
+              <div class="aspect-in">
+                <!-- description -->
+                <div class="aspect-d">
+                  ol要素を使ったリストの数字を大きい順にします。<br>
+                  <<code>ol</code> reversed> ... <<code>/ol</code>><br>
+                  詳しくは発展知識で説明します。<a href="#special-1">ここをクリック！</a><br>
+                </div>
+              </div>
+              <!-- ここまでで1ブロック -->
+              <!-- Title -->
+              <div class="aspect-t">
+                start
+              </div>
+              <div class="aspect-in">
+                <!-- description -->
+                <div class="aspect-d">
+                  ol要素を使ったリストの数字を指定した数字から始めます。<br>
+                  <<code>ol</code> start="始める数字"> ... <<code>/ol</code>><br>
+                  詳しくは発展知識で説明します。<a href="#special-2">ここをクリック！</a><br>
+                </div>
+              </div>
+              <!-- ここまでで1ブロック -->
+              <!-- Title -->
+              <div class="aspect-t">
+                value
+              </div>
+              <div class="aspect-in">
+                <!-- description -->
+                <div class="aspect-d">
+                  ol要素を使ったリストの数字を指定します。<br>
+                  指定場所は変更したい項目のli要素の中です。<br>
+                  <<code>li</code> value="数字"> ... <<code>/li</code>><br>
+                  詳しくは発展知識で説明します。<a href="#special-3">ここをクリック！</a><br>
+                </div>
+              </div>
+              <!-- ここまでで1ブロック -->
+              <!-- Title -->
+              <div class="aspect-t">
+                type
+              </div>
+              <div class="aspect-in">
+                <!-- description -->
+                <div class="aspect-d">
+                  ol要素を使ったリストの数字を他のものに変更します。<br>
+                  <<code>ol</code> type="値"> ... <<code>/ol</code>><br>
+                </div>
+                <!-- Value -->
+                <div class="aspect-v">
+                  値 : 1, a, A, i, I<br>
+                  <div class="aspect-v-d">
+                    <ul>
+                      <li>
+                        1 : 1. 2. 3. で表示します。初期設定はこれなので、なにも指定しないとこれになります。<br>
+                        <ol type="1">
+                          <li>a</li>
+                          <li>i</li>
+                          <li>u</li>
+                        </ol>
+                      </li>
+                      <li>
+                        a : a. b. c. で表示します。zまでいくとaa. ab.と続きます。エクセルみたい。<br>
+                        <ol type="a">
+                          <li>a</li>
+                          <li>i</li>
+                          <li>u</li>
+                        </ol>
+                      </li>
+                      <li>
+                        A : A. B. C. で表示します。ZまでいくとAA. AB.と続きます。エクセルみたい。(2回目)<br>
+                        <ol type="A">
+                          <li>a</li>
+                          <li>i</li>
+                          <li>u</li>
+                        </ol>
+                      </li>
+                      <li>
+                        i : i. ii. iii. のローマ数字で表示します。ミニ知識として、X=10, L=50, C=100, D=500, M=1000です。ローマ数字の一般的な表記法では4000未満までしか表現できないそうですがhtmlではどうなんでしょうか。。。やりませんよ？？<br>
+                        <ol type="i">
+                          <li>a</li>
+                          <li>i</li>
+                          <li>u</li>
+                          <li>e</li>
+                          <li>o</li>
+                        </ol>
+                      </li>
+                      <li>
+                        I : I. II. III. のローマ数字で表示します。4000以上はご自分でお確かめください！<br>
+                        <ol type="I">
+                          <li>a</li>
+                          <li>i</li>
+                          <li>u</li>
+                          <li>e</li>
+                          <li>o</li>
+                        </ol>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- ここまでで1ブロック -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 発展知識 -->
+        <div class="body-tips" id="tips">
+          <div class="body-subtitle">
+            <div class="body-subtitle-in">
+              発展知識
+            </div>
+          </div>
+          <div class="body-desc">
+            <div class="tips-t" id="special-1">
+              ol要素の数字を大きい順にする
+            </div>
+            <div class="tips-in">
+              <div class="tips-d">
+                属性の1つめで紹介した<u>reversed</u>を使うことで変更できます。
+              </div>
+              <div class="tips-c-h">
+                <div class="tips-c-h-t">
+                  <u>htmlファイル</u>
+                </div>
+                <div class="tips-c-h-e">
+                  使用する要素 : <mark>ol</mark>&nbsp;&nbsp;<mark>li</mark><br>
+                  使用する属性 : <a href="#">reversed</a><br>
+                </div>
+                <ol>
+                  <li><<mark>ol</mark>&nbsp;<a href="#">reversed</a>></li>
+                  <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>a<<mark>/li</mark>></li>
+                  <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>i<<mark>/li</mark>></li>
+                  <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>u<<mark>/li</mark>></li>
+                  <li><<mark>/ol</mark>></li>
+                </ol>
+              </div>
+              <div class="exa-r">
+                <ol reversed>
+                  <li>a</li>
+                  <li>i</li>
+                  <li>u</li>
+                </ol>
+              </div>
+            </div>
+            <div class="tips-t">
+              リスト先頭の点や数字をなくす
+            </div>
+            <div class="tips-in">
+              <div class="tips-d">
+                cssファイルで<u>list-style: none;</u>とすることで消すことができます。
+              </div>
+              <div class="tips-c-h">
+                <div class="tips-c-h-t">
+                  <u>htmlファイル</u>
+                </div>
+                <div class="tips-c-h-e">
+                  使用する要素 : <mark>ul</mark>&nbsp;&nbsp;<mark>li</mark><br>
+                </div>
+                <ol>
+                  <li><<mark>ul</mark>></li>
+                  <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>a<<mark>/li</mark>></li>
+                  <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>i<<mark>/li</mark>></li>
+                  <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>u<<mark>/li</mark>></li>
+                  <li><<mark>/ul</mark>></li>
+                </ol>
+              </div>
+              <div class="tips-c-c">
+                <div class="tips-c-c-t">
+                  <u>cssファイル</u>
+                </div>
+                <div class="tips-c-c-e">
+                  使用する要素 : <a href="#">list-style</a>
+                </div>
+                <ol>
+                  <li>ul{</li>
+                  <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><a href="#">list-style</a>: none;</li>
+                  <li>}</li>
+                </ol>
+              </div>
+              <div class="tips-r">
+                <ul class="tips-r-ul">
+                  <li>a</li>
+                  <li>i</li>
+                  <li>u</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tips-t" id="special-2">
+              ol要素の数字を途中から始める
+            </div>
+            <div class="tips-in">
+              <div class="tips-d">
+                属性の2つめで紹介した<u>start=" "</u>を使うことで変更できます。
+              </div>
+              <div class="tips-c-h">
+                <div class="tips-c-h-t">
+                  <u>htmlファイル</u>
+                </div>
+                <div class="tips-c-h-e">
+                  使用する要素 : <mark>ol</mark>&nbsp;&nbsp;<mark>li</mark><br>
+                  使用する属性 : <a href="#">start</a>
+                </div>
+                <ol>
+                  <li><<mark>ol</mark> start="5"></li>
+                  <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>a<<mark>/li</mark>></li>
+                  <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>i<<mark>/li</mark>></li>
+                  <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>u<<mark>/li</mark>></li>
+                  <li><<mark>/ol</mark>></li>
+                </ol>
+              </div>
+              <div class="tips-r">
+                <ol start="5">
+                  <li>a</li>
+                  <li>i</li>
+                  <li>u この並び。。。5..6..7..。。。コロナ。。。(。∀ ﾟ)</li>
+                </ol>
+              </div>
+            </div>
+            <div class="tips-t" id="special-3">
+              リスト先頭の数字を指定する
+            </div>
+            <div class="tips-in">
+              <div class="tips-d">
+                属性の3つめで紹介した<u>value=" "</u>を使うことで指定できます。<br>
+                途中で指定すると次の数字は変更した数字からカウントされます。<br>
+              </div>
+              <div class="tips-c-h">
+                <div class="tips-c-h-t">
+                  <u>htmlファイル</u>
+                </div>
+                <div class="tips-c-h-e">
+                  使用する要素 : <mark>ol</mark>&nbsp;&nbsp;<mark>li</mark><br>
+                  使用する属性 : <a href="#">value</a>
+                </div>
+                <ol>
+                  <li><<mark>ol</mark>></li>
+                  <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>a<<mark>/li</mark>></li>
+                  <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>i<<mark>/li</mark>></li>
+                  <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark> value="10">u<<mark>/li</mark>></li>
+                  <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>e<<mark>/li</mark>></li>
+                  <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>o<<mark>/li</mark>></li>
+                  <li><<mark>/ol</mark>></li>
+                </ol>
+              </div>
+              <div class="tips-r">
+                <ol>
+                  <li>a</li>
+                  <li>i</li>
+                  <li value="10">u</li>
+                  <li>e</li>
+                  <li>o</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 使用例 -->
+        <div class="body-exa" id="example">
+          <div class="body-subtitle">
+            <div class="body-subtitle-in">
+              使用例
+            </div>
+          </div>
+          <!-- ul例 -->
+          <div class="exa-block">
+            <!-- Title -->
+            <div class="exa-t">
+              <<code>ul</code>>&nbsp;...&nbsp;<<code>/ul</code>>
+            </div>
+            <!-- Code -->
+            <div class="exa-c-h">
+              <div class="exa-c-h-t">
+                <u>htmlファイル</u>
+              </div>
+              <div class="exa-c-h-e">
+                使用する要素 : <mark>ul</mark>&nbsp;&nbsp;<mark>li</mark>
+              </div>
+              <ol>
+                <li><<mark>ul</mark>></li>
+                <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>1<<mark>/li</mark>></li>
+                <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>></li>
+                <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>ul</mark>></li>
+                <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>2.0<<mark>/li</mark>></li>
+                <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>2.5<<mark>/li</mark>></li>
+                <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>/ul</mark>></li>
+                <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>/li</mark>></li>
+                <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>3<<mark>/li</mark>></li>
+                <li><<mark>/ul</mark>></li>
+              </ol>
+            </div>
+            <!-- Result -->
+            <div class="exa-r">
+              <!-- ここから実行 -->
+              <ul>
+                <li>1</li>
+                <li>
+                  <ul>
+                    <li>2.0</li>
+                    <li>2.5</li>
+                  </ul>
+                </li>
+                <li>3</li>
+              </ul>
+              <!-- ここまで実行 -->
+            </div>
+          </div>
+          <!-- ここまでで１ブロック -->
+          <!-- ol例 -->
+          <div class="exa-block">
+            <!-- Title -->
+            <div class="exa-t">
+              <<code>ol</code>>&nbsp;...&nbsp;<<code>/ol</code>>
+            </div>
+            <!-- Code -->
+            <div class="exa-c-h">
+              <div class="exa-c-h-t">
+                <u>htmlファイル</u>
+              </div>
+              <div class="exa-c-h-e">
+                使用する要素 : <mark>ol</mark>&nbsp;&nbsp;<a href="#"><mark>li</mark></a><br>
+                使用する属性 : reversed&nbsp;&nbsp;value
+              </div>
+              <ol>
+                <li><<mark>ol</mark>&nbsp;reversed></li>
+                <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>a<mark>/li</mark>></li>
+                <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>i<<mark>/li</mark>></li>
+                <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>u<<mark>/li</mark>></li>
+                <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>&nbsp;value="4">e<<mark>/li</mark>></li>
+                <li><span class="cline">&nbsp;</span><span class="cline">&nbsp;</span><<mark>li</mark>>o<<mark>/li</mark>></li>
+                <li><<mark>/ol</mark>></li>
+              </ol>
+            </div>
+            <!-- Result -->
+            <div class="exa-r">
+              <!-- ここから実行 -->
+              <ol reversed>
+                <li>a</li>
+                <li>i</li>
+                <li>u</li>
+                <li value="4">e</li>
+                <li>o</li>
+              </ol>
+              <!-- ここまで実行 -->
+            </div>
+          </div>
+          <!-- ここまでで１ブロック -->
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="">
+        footer
+      </div>
+    </footer>
+  </body>
+</html>
