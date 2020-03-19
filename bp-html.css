@@ -1,0 +1,203 @@
+.cline{
+  border-right: thin solid #949494c9;
+}
+body{
+  margin: 0px;
+  background-color: #80808052;
+  font-size: 1.125em;
+  font-family: arial;
+}
+
+header{
+  margin-left: 0vw;
+}
+.header-logo{
+  background-color: #ffa500ad;
+  padding-top: 1vw;
+  padding-left: 2vw;
+  padding-bottom: 1vw;
+  border-bottom: thin solid black;
+}
+.list-menu{
+  background-color: orange;
+}
+.list-menu1,.list-menu2{
+  float: left;
+}
+.list-menu1,.list-menu2,.list-menu3{
+  margin: 0.5vw 1vw;
+  border: thin solid gray;
+}
+
+.body{
+  margin: 1vw 8vw;
+  padding: 1vw 3vw;
+  background-color: white;
+  border: thin solid black;
+}
+.body-maintitle{
+  font-family: sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  padding-top: 1vw;
+  margin-bottom: 1vw;
+  border-bottom: thin solid black;
+}
+.table{
+  margin-left: 15vw;
+  margin-right: 15vw;
+  padding: 1vw 2vw;
+  background-color: #e2e2e242;
+  border: thin solid black;
+}
+.table-title{
+  color: gray;
+  font-size: 1.5em;
+  padding-top: 0.5vw;
+  padding-left: 1.5vw;
+}
+.table-in{
+  font-size: 1.4em;
+  padding-left: 3vw;
+}
+.table-in > ol{
+  line-height: 1.5em;
+}
+.body-subtitle{
+  font-family: sans-serif;
+  margin-top: 1vw;
+  padding-left: 1vw;
+  border-left: thick solid blue;
+  border-bottom: thin solid blue;
+}
+.body-subtitle-in{
+  font-size: 2.3em;
+  font-weight: 600;
+  margin-bottom: 0.5vw;
+  padding-left: 0.5vw;
+  border-left: thin solid blue;
+}
+.body-desc-t{
+  font-size: 1.5em;
+  padding-bottom: 1vw;
+}
+.body-desc{
+  font-size: 1.3em;
+  margin: 1vw 2vw;
+  padding: 0.5vw 1vw;
+  border-right: thin solid aqua;
+  border-left: thin solid aqua;
+}
+.aspect-t{
+  font-size: 1.5em;
+}
+.aspect-in{
+  margin-bottom: 1vw;
+  padding-left: 1vw;
+  border-left: medium solid aqua;
+}
+.aspect-d{
+  padding-left: 1vw;
+}
+.aspect-v{
+  padding-top: 0.3vw;
+  padding-left: 2vw;
+}
+.aspect-v-d{
+  margin-left: 1.5vw;
+  padding-left: 1vw;
+  border-left: thick solid aqua;
+}
+.tips-t{
+  font-size: 1.5em;
+}
+.tips-in{
+  margin-bottom: 1vw;
+  padding-left: 1vw;
+  border-left: medium solid aqua;
+}
+.tips-d{
+}
+.tips-c-h{
+  font-size: 0.88em;
+  padding: 0.3vw;
+  padding-left: 2em;
+  background-color: #7fd3de80;
+}
+.tips-c-c{
+  font-size: 0.88em;
+  padding: 0.3vw;
+  padding-left: 2em;
+  background-color: #8000803b;
+}
+.tips-c-h-t,.tips-c-c-t{
+  font-size: 1.28em;
+  padding-top: 0.5vw;
+  padding-left: 1vw;
+}
+.tips-c-h-e,.tips-c-c-e{
+  padding-top: 0.5vw;
+  padding-left: 1vw;
+}
+.tips-c-h li,.tips-c-c li{
+  border-left: thin solid black;
+}
+.tips-r{
+  font-size: 0.8em;
+  padding-left: 2em;
+  border: thin solid gray;
+}
+.tips-c-h code,.exa-block code,.aspect-block code{
+  font-family: sans-serif;
+}
+.tips-c-h ol{
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+.exa-block{
+  margin: 0.5vw 4vw;
+  padding: 0.5vw 2vw;
+  border: thin solid yellow;
+}
+.exa-t{
+  font-family: Tahoma;
+  font-size: 1.5em;
+  margin-top: 0.5vw;
+  margin-right: 20vw;
+  margin-bottom: 1vw;
+  border-bottom: thin solid yellow;
+}
+.exa-c-h{
+  font-size: 1.125em;
+  padding: 0.3vw;
+  padding-left: 2em;
+  background-color: #7fd3de80;
+}
+.exa-c-c{
+  font-size: 1.125em;
+  padding: 0.3vw;
+  padding-left: 2em;
+  background-color: #8000803b;
+}
+.exa-c-h-t,.exa-c-c-t{
+  font-size: 1.3em;
+  padding-top: 0.5vw;
+  padding-left: 1vw;
+}
+.exa-c-h-e,.exa-c-c-e{
+  padding-top: 0.5vw;
+  padding-left: 1vw;
+}
+.exa-c-h li,.exa-c-c li{
+  border-left: thin solid black;
+}
+.exa-r{
+  padding-left: 2em;
+  border: thin solid gray;
+}
+
+footer{
+  background: #0000007a;
+  padding: 1vw 2vw;
+}
+/* ここまで全ページ共通 */
